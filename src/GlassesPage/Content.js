@@ -14,7 +14,6 @@ export default class Content extends Component {
       url: url,
       desc: desc,
     });
-    console.log(this.state.name);
   };
   renderListGlasses = () => {
     return glassesData.map((el, index) => {
@@ -24,7 +23,6 @@ export default class Content extends Component {
           key={index}
           className="border p-2 hover:scale-105 duration-300 cursor-pointer"
           onClick={() => {
-            console.log(url);
             this.handleClickGlasses(name, url, desc);
           }}
         >
